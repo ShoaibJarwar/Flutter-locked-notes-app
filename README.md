@@ -86,7 +86,7 @@ dependencies:
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/locked-notes-app.git
+git clone https://github.com/ShoaibJarwar/Flutter-locked-notes-app
 ```
 
 ### Navigate to Project
