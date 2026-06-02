@@ -1,316 +1,158 @@
-# \# 🔒 Locked Notes App
+# 🔒 Locked Notes App
 
-# 
+A Flutter-based secure note-taking application that allows users to create, update, delete, and manage personal notes stored locally using SQLite. The app is designed to provide a simple and secure way to organize private information.
 
-# A Flutter-based secure note-taking application that allows users to create, update, delete, and manage personal notes stored locally using SQLite. The app is designed to provide a simple and secure way to organize private information.
+## 🚀 Features
 
-# 
+### 📝 Notes Management
+- Create Notes
+- View Notes
+- Edit Notes
+- Delete Notes
 
-# \## 🚀 Features
+### 🔍 Search Functionality
+- Search notes instantly
+- Filter notes by title or content
 
-# 
+### 💾 Local Storage
+- SQLite database storage
+- Persistent data across app sessions
 
-# \### 📝 Notes Management
+### 🎨 User-Friendly Interface
+- Clean and responsive design
+- Easy navigation
+- Material Design components
 
-# \- Create Notes
+---
 
-# \- View Notes
+## 📱 Screens
 
-# \- Edit Notes
+- Home Screen
+- Add Note Screen
+- Edit Note Screen
+- Note Details Screen
 
-# \- Delete Notes
+---
 
-# 
+## 🏗️ Project Structure
 
-# \### 🔍 Search Functionality
+```plaintext
+lib/
+│
+├── models/
+│   └── note_model.dart
+│
+├── services/
+│   └── db_helper.dart
+│
+├── screens/
+│   ├── home_screen.dart
+│   ├── add_note_screen.dart
+│   ├── edit_note_screen.dart
+│   └── note_detail_screen.dart
+│
+└── main.dart
+```
 
-# \- Search notes instantly
+---
 
-# \- Filter notes by title or content
+## 🗄️ Database Schema
 
-# 
+### Notes Table
 
-# \### 💾 Local Storage
+| Column | Type |
+|----------|----------|
+| id | INTEGER PRIMARY KEY AUTOINCREMENT |
+| title | TEXT NOT NULL |
+| content | TEXT NOT NULL |
+| createdAt | TEXT |
 
-# \- SQLite database storage
+---
 
-# \- Persistent data across app sessions
+## 📦 Dependencies
 
-# 
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.4.2
+  path: ^1.9.1
+```
 
-# \### 🎨 User-Friendly Interface
+---
 
-# \- Clean and responsive design
+## ⚙️ Installation
 
-# \- Easy navigation
+### Clone Repository
 
-# \- Material Design components
+```bash
+git clone https://github.com/yourusername/locked-notes-app.git
+```
 
-# 
+### Navigate to Project
 
-# \---
+```bash
+cd locked-notes-app
+```
 
-# 
+### Install Dependencies
 
-# \## 📱 Screens
+```bash
+flutter pub get
+```
 
-# 
+### Run Application
 
-# \- Home Screen
+```bash
+flutter run
+```
 
-# \- Add Note Screen
+---
 
-# \- Edit Note Screen
+## 🎯 Learning Objectives
 
-# \- Note Details Screen
+This project demonstrates:
 
-# 
+- Flutter CRUD Operations
+- SQLite Database Integration
+- Local Data Persistence
+- Stateful Widget Management
+- Form Validation
+- Search Implementation
+- Clean Project Structure
 
-# \---
+---
 
-# 
+## 🚀 Future Improvements
 
-# \## 🏗️ Project Structure
+- PIN Lock Authentication
+- Fingerprint Authentication
+- Dark Mode Support
+- Categories & Tags
+- Cloud Backup
+- Note Encryption
+- Rich Text Editing
+- Export Notes to PDF
 
-# 
+---
 
-# ```plaintext
+## 🛠️ Built With
 
-# lib/
+- Flutter
+- Dart
+- SQLite (sqflite)
 
-# │
+---
 
-# ├── models/
+## 👨‍💻 Author
 
-# │   └── note\_model.dart
+**Shoaib Akhter**
 
-# │
+BS Information Technology Student  
+Flutter & Web Development Enthusiast
 
-# ├── services/
+---
 
-# │   └── db\_helper.dart
+## 📄 License
 
-# │
-
-# ├── screens/
-
-# │   ├── home\_screen.dart
-
-# │   ├── add\_note\_screen.dart
-
-# │   ├── edit\_note\_screen.dart
-
-# │   └── note\_detail\_screen.dart
-
-# │
-
-# └── main.dart
-
-# ```
-
-# 
-
-# \---
-
-# 
-
-# \## 🗄️ Database Schema
-
-# 
-
-# \### Notes Table
-
-# 
-
-# | Column | Type |
-
-# |----------|----------|
-
-# | id | INTEGER PRIMARY KEY AUTOINCREMENT |
-
-# | title | TEXT NOT NULL |
-
-# | content | TEXT NOT NULL |
-
-# | createdAt | TEXT |
-
-# 
-
-# \---
-
-# 
-
-# \## 📦 Dependencies
-
-# 
-
-# ```yaml
-
-# dependencies:
-
-# &#x20; flutter:
-
-# &#x20;   sdk: flutter
-
-# &#x20; sqflite: ^2.4.2
-
-# &#x20; path: ^1.9.1
-
-# ```
-
-# 
-
-# \---
-
-# 
-
-# \## ⚙️ Installation
-
-# 
-
-# \### Clone Repository
-
-# 
-
-# ```bash
-
-# git clone https://github.com/yourusername/locked-notes-app.git
-
-# ```
-
-# 
-
-# \### Navigate to Project
-
-# 
-
-# ```bash
-
-# cd locked-notes-app
-
-# ```
-
-# 
-
-# \### Install Dependencies
-
-# 
-
-# ```bash
-
-# flutter pub get
-
-# ```
-
-# 
-
-# \### Run Application
-
-# 
-
-# ```bash
-
-# flutter run
-
-# ```
-
-# 
-
-# \---
-
-# 
-
-# \## 🎯 Learning Objectives
-
-# 
-
-# This project demonstrates:
-
-# 
-
-# \- Flutter CRUD Operations
-
-# \- SQLite Database Integration
-
-# \- Local Data Persistence
-
-# \- Stateful Widget Management
-
-# \- Form Validation
-
-# \- Search Implementation
-
-# \- Clean Project Structure
-
-# 
-
-# \---
-
-# 
-
-# \## 🚀 Future Improvements
-
-# 
-
-# \- PIN Lock Authentication
-
-# \- Fingerprint Authentication
-
-# \- Dark Mode Support
-
-# \- Categories \& Tags
-
-# \- Cloud Backup
-
-# \- Note Encryption
-
-# \- Rich Text Editing
-
-# \- Export Notes to PDF
-
-# 
-
-# \---
-
-# 
-
-# \## 🛠️ Built With
-
-# 
-
-# \- Flutter
-
-# \- Dart
-
-# \- SQLite (sqflite)
-
-# 
-
-# \---
-
-# 
-
-# \## 👨‍💻 Author
-
-# 
-
-# \*\*Shoaib Akhter\*\*
-
-# 
-
-# BS Information Technology Student  
-
-# Flutter \& Web Development Enthusiast
-
-# 
-
-# \---
-
-# 
-
-# \## 📄 License
-
-# 
-
-# This project is licensed under the MIT License.
-
+This project is licensed under the MIT License.
